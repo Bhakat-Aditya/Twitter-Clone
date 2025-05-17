@@ -2,11 +2,12 @@ import { defineConfig } from 'vite';
 import path from 'path';
 
 export default defineConfig({
-  root: path.resolve(__dirname, 'src'), // Sets "/src" as the root
+  base: '/your-repo-name/', // Replace with your actual repository name
+  root: path.resolve(__dirname, 'src'),
   build: {
-    outDir: '../dist', // Outputs files to "/dist" (optional)
+    outDir: '../dist',
   },
   server: {
-    port: 3000, // Forces port 3000 (optional)
+    port: 3000,
   },
 });
